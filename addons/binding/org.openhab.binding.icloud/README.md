@@ -70,7 +70,7 @@ Bridge icloud:account:myaccount [appleId="mail@example.com", password="secure", 
 ### icloud.items
 
 ```php
-Group    "iPhone" iCloud_Group
+Group    iCloud_Group "iPhone"
 
 String   iPhone_BatteryStatus             "Battery Status [%s %%]" <battery> (iCloud_Group) {channel="icloud:device:myaccount:myiPhone8:batteryStatus"}
 Number   iPhone_BatteryLevel              "Battery Level [%.0f]"   <battery> (iCloud_Group) {channel="icloud:device:myaccount:myiPhone8:batteryLevel"}
